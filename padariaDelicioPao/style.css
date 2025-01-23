@@ -1,0 +1,114 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo e fontes */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    color: white;
+    text-decoration: none;
+    background-color: #f7a900;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-button:hover {
+    background-color: #e68900;
+  }
+  
+  /* Botão hamburger (para telas pequenas) */
+  .hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background: url('img/padaria.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Estilo para telas pequenas */
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .navbar-links li {
+      margin: 10px 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar-links.active {
+      display: block;
+    }
+  }
+  
