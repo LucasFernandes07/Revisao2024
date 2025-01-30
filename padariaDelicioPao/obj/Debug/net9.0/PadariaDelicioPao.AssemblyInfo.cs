@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PadariaDelicioPao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ea6ee47f13860de116b2b577d3b0beade222f3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+124108de4bd4846bd4e6d102aa6f0fc6345236e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("PadariaDelicioPao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PadariaDelicioPao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

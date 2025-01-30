@@ -10,6 +10,11 @@
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('IMG/110720162.jpg   '); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center center; /* Garante que a imagem fique centralizada */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    min-height: 100%;
   }
   
   /* Navbar */
@@ -30,7 +35,8 @@
   }
   
   .navbar .logo img {
-    height: 40px;
+    height: 70px;
+    
   }
   
   .navbar-links {
@@ -74,41 +80,45 @@
     font-size: 30px;
   }
   
-  /* Hero Section */
-  .hero-section {
+  @media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section {
+    background: url(img/delicious-homemade-bread.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
-    background: url('img/padaria.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  /* Estilo para telas pequenas */
-  @media screen and (max-width: 768px) {
-    .navbar-links {
-      display: none;
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
-    }
-  
-    .navbar-links li {
-      margin: 10px 0;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    .navbar-links.active {
-      display: block;
-    }
-  }
-  
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
